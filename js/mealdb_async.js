@@ -1,3 +1,6 @@
+
+
+
 const searchFood = async () => {
     const searchField = document.getElementById('search-field')
     const searchText = searchField.value
@@ -28,6 +31,7 @@ const displaySearchResutl = meals => {
     // clearing previous search result 
     //searchResult.innerHTML = ''
     searchResult.textContent = '';
+    document.getElementById('meal-details').textContent = '';
     if (meals.length == 0) {
         //show no result found 
     }
